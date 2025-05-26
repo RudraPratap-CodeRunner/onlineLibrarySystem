@@ -5,10 +5,10 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Error from './components/Error.jsx'
-import Browsebooks from './components/pages/Browsebooks.jsx'
-import AddBook from './components/pages/AddBook.jsx'
-import BookDetails from './components/pages/BookDetails.jsx'
-import Home from './components/pages/Home.jsx'
+import Browsebooks from './pages/Browsebooks.jsx'
+import AddBook from './pages/AddBook.jsx'
+import BookDetails from './pages/BookDetails.jsx'
+import Home from './pages/Home.jsx'
 
 const appRouter = createBrowserRouter([
   {
