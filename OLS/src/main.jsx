@@ -25,6 +25,10 @@ const appRouter = createBrowserRouter([
         element:<Browsebooks />
       },
       {
+        path:'/browsebooks/:category',
+        element:<Browsebooks />
+      },
+      {
         path:'/bookdetails/:id',
         element:<BookDetails />
       },
