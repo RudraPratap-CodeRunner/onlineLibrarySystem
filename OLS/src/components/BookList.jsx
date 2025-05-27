@@ -8,7 +8,7 @@ const BookList = (props) => {
       {
         props.bookData.map(data=>(
           
-            <Link to='/bookdetails/{data.id}' key={data.id}><Book key={data.id} bookDetails={data} /></Link>
+            <Link to={`/bookdetails/${data.id}`} key={data.id}><Book key={data.id} bookDetails={data} /></Link>
          
         ))
       }
