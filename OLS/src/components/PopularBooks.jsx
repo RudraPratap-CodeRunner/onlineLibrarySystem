@@ -15,7 +15,9 @@ const PopularBooks = () => {
     getPopularBooks(books);
   }, []);
 
- 
+  useEffect(() => {
+    console.log(popularBooks);
+  }, [popularBooks]);
   return (
     <div>
         <h1 className='m-2 font-bold text-2xl text-center text-red-400'>Popular Books</h1>
