@@ -9,6 +9,8 @@ import Browsebooks from './pages/Browsebooks.jsx'
 import AddBook from './pages/AddBook.jsx'
 import BookDetails from './pages/BookDetails.jsx'
 import Home from './pages/Home.jsx'
+import { Provider } from 'react-redux';
+import store from './redux/store.js'
 
 const appRouter = createBrowserRouter([
   {
@@ -44,6 +46,8 @@ const appRouter = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={appRouter} />
+    <Provider store={store}>
+      <RouterProvider router={appRouter}  />
+    </Provider>
   </StrictMode>,
 )

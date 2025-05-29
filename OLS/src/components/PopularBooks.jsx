@@ -24,7 +24,7 @@ const PopularBooks = () => {
         <div className='flex gap-6 flex-wrap justify-center items-center mt-4'>
             {
                 popularBooks.map(data=>(
-                    <Link to={`/bookdetails/${data.id}`}><Book key={data.id} bookDetails={data} /></Link>
+                    <Link to={`/bookdetails/${data.id}`} key={data.id}><Book key={data.id} bookDetails={data} /></Link>
                 ))
             }
         </div>

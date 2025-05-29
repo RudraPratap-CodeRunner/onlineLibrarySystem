@@ -5,6 +5,7 @@ import PopularBooks from '../components/PopularBooks'
 import BookCategory from '../components/BookCategory'
 import { Link } from 'react-router-dom'
 
+
 const Home = () => {
   const category = ['Fiction','Non-fiction','Self-help','History','Biography'];
   return (
@@ -13,11 +14,12 @@ const Home = () => {
       <div className='flex justify-center items-center gap-4 mx-auto w-48 my-4'>
         {
         category.map(data=>(
-          <Link to={`/browsebooks/${data.toLowerCase()}`} ><BookCategory  categoryInformation={data} /></Link>
+          <Link to={`/browsebooks/${data.toLowerCase()}`} key={data} ><BookCategory key={data}  categoryInformation={data} /></Link>
         ))
         }
       </div>
       <PopularBooks />
+      
       </div>
   )
 }
