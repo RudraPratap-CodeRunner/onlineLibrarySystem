@@ -4,6 +4,7 @@ import Welcome from '../components/Welcome'
 import PopularBooks from '../components/PopularBooks'
 import BookCategory from '../components/BookCategory'
 import { Link } from 'react-router-dom'
+import CategoryCards from '../components/CategoryCards '
 
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
         }
       </div>
       <PopularBooks />
-      
+      <CategoryCards/>
       </div>
   )
 }
