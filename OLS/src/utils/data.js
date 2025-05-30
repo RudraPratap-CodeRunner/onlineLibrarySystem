@@ -15,7 +15,7 @@ const bookCategories = [
     id: 3,
     name: 'Self-help',
     description: 'Improve your life with guides, psychology, motivation, and wellness.',
-    image: 'https://source.unsplash.com/400x300/?selfhelp,books',
+    image: 'https://www.pexels.com/photo/woman-reading-harry-potter-book-1314584/',
   },
   {
     id: 4,
