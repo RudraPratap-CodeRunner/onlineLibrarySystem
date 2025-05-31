@@ -1,12 +1,53 @@
-# React + Vite
+                             Online Library system
+Note: Project is not copied. It is made by me.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. github Link :https://github.com/RudraPratap-CodeRunner/onlineLibrarySystem
 
-Currently, two official plugins are available:
+2. How to run 
+   A.) Download the project
+   B.) npm install
+   C.) npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Folder structure
+   ols/
+├── public/
+│                  
+│
+├── src/
+│   ├── assets/                       # Optional: images/icons if added later
+│
+│   ├── components/                   # Reusable UI components
+│   │   ├── Book.jsx
+│   │   ├── BookCategory.jsx
+│   │   ├── BookList.jsx
+│   │   ├── Header.jsx
+│   │   ├── PopularBooks.jsx
+│   │   ├──welcome.jsx
+│
+│   ├── pages/                        # Route-level views
+│   │   ├── AddBook.jsx
+│   │   ├── Browsebooks.jsx
+│   │   ├── BookDetails.jsx
+│   │   ├── Error.jsx
+│   │   └── Home.jsx
+│
+│   ├── redux/                        # Redux Toolkit setup
+│   │   ├── booksSlice.js
+│   │   └── store.js
+│
+│   ├── utils/                        # 
+│   │   └── data.js  
+│   │    └── mockData.js
+│
+│   ├── App.jsx                       # Layout + routing outlet
+│   ├── main.jsx                      # React app entry with RouterProvider
+│   └── styles.css                    # Tailwind CSS and custom styles
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
+   
+project contains all the required functionalities.   

@@ -11,7 +11,7 @@ const Error = () => {
       <div className="p-4">
         <button
           onClick={() => navigate('/')}
-          className="flex items-center gap-2 bg-blue-500 text-white px-3 py-1.5 rounded hover:bg-blue-600 transition duration-200"
+          className=" cursor-pointer flex items-center gap-2 bg-blue-500 text-white px-3 py-1.5 rounded hover:bg-blue-600 transition duration-200"
         >
           <HiArrowNarrowLeft className="w-5 h-5" />
           Back To Home

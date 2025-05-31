@@ -3,7 +3,7 @@ const books = [
     id: 1,
     title: "Educated",
     author: "Tara Westover",
-    category: "non-fiction",
+    category: "self-help",
     description: "A memoir about growing up in a survivalist family and the transformative power of education.",
     cover_image: "https://images-na.ssl-images-amazon.com/images/I/81WojUxbbFL.jpg",
     popularity: true,
