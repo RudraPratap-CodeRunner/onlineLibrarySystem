@@ -2,7 +2,7 @@ import React from 'react';
 
 const Book = ({ bookDetails }) => {
   return (
-    <div className="w-[200px] h-[370px] bg-white shadow-md rounded-lg overflow-hidden border border-gray-200 transition-transform duration-300 hover:scale-105 cursor-pointer">
+    <div className=" w-[90%] sm:w-[250px] h-[370px] bg-white shadow-md rounded-lg overflow-hidden border border-gray-200 transition-transform duration-300 hover:scale-105 cursor-pointer mx-auto mb-8">
       <img
         src={bookDetails.cover_image}
         alt={bookDetails.title}

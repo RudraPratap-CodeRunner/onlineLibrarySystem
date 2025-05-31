@@ -36,10 +36,21 @@ const Browsebooks = () => {
   
   return (
     <div>
-      <div className='flex items-center justify-center my-8 gap-3 bg-red-50'>
-        <input className='bg-white px-3  py-1 focus:outline-none focus:ring-2 shadow-sm focus:ring-blue-500 cursor-pointer' type="text" onChange={(e)=>setSearchText(e.target.value)} placeholder='book name / title' />
-        <button onClick={()=>handleSearch(books,category)}  className='bg-blue-500 shadow-sm text-white px-8 py-1 cursor-pointer'>Search</button>
-     </div>
+      <div className="flex flex-col md:flex-row items-center justify-center my-8 gap-3 bg-red-50 p-4">
+  <input
+    className="bg-white w-full md:w-auto px-3 py-2 focus:outline-none focus:ring-2 shadow-sm focus:ring-blue-500"
+    type="text"
+    onChange={(e) => setSearchText(e.target.value)}
+    placeholder="Book name / title"
+  />
+  <button
+    onClick={() => handleSearch(books, category)}
+    className="bg-blue-500 shadow-sm text-white w-full md:w-auto px-8 py-2"
+  >
+    Search
+  </button>
+</div>
+
       {!isSearching && category && (
         <h2 className='text-center text-xl font-semibold text-gray-700 mb-4 capitalize'>
           Category: {category}

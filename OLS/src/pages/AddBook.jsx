@@ -59,7 +59,7 @@ export default function AddBook() {
         {['title', 'author', 'description', 'rating'].map((field) => (
           <div key={field}>
             <input
-              className="w-full p-2 border"
+              className="w-full p-2 border focus:border-2 focus:outline-none focus:border-blue-500"
               placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
               value={form[field]}
               onChange={(e) => setForm({ ...form, [field]: e.target.value })}
@@ -71,7 +71,7 @@ export default function AddBook() {
         {/* Category Dropdown */}
         <div>
           <select
-            className="w-full p-2 border"
+            className="w-full p-2 border  focus:border-2 focus:outline-none focus:border-blue-500"
             value={form.category}
             onChange={(e) => setForm({ ...form, category: e.target.value })}
           >
@@ -88,7 +88,7 @@ export default function AddBook() {
         {/* Popularity Dropdown */}
         <div>
           <select
-            className="w-full p-2 border"
+            className="w-full   p-2 border  focus:border-2 focus:outline-none focus:border-blue-500"
             value={form.popularity}
             onChange={(e) => setForm({ ...form, popularity: e.target.value })}
           >
@@ -104,7 +104,7 @@ export default function AddBook() {
           <input
             type="file"
             accept="image/*"
-            className="w-full p-2 border"
+            className="w-full p-2 border focus:border-2 focus:outline-none focus:border-blue-500"
             onChange={handleImageChange}
           />
           {errors.cover_image && <p className="text-red-500 text-sm">{errors.cover_image}</p>}

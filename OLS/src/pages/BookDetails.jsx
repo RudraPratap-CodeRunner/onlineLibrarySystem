@@ -51,7 +51,7 @@ const BookDetails = () => {
         </p>
 
         <button
-          onClick={() => navigate('/books/all')}
+          onClick={() => navigate('/browsebooks')}
           className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition"
         >
           Back to Browse

@@ -20,7 +20,8 @@ const PopularBooks = () => {
   }, [popularBooks]);
   return (
     <div>
-        <h1 className='m-2 font-bold text-2xl text-center text-red-400'>Popular Books</h1>
+        <h1 className="text-3xl font-bold text-center text-[#1E2939] mt-4 mb-6">Popular Books</h1>
+
         <div className='flex gap-6 flex-wrap justify-center items-center mt-4'>
             {
                 popularBooks.map(data=>(
