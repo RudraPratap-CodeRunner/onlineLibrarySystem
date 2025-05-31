@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import BookList from '../components/BookList'
 import { useParams } from 'react-router-dom'
-import books from '../utils/mockData'
+
 import { useSelector } from 'react-redux';
 
 const Browsebooks = () => {
@@ -32,7 +32,7 @@ const Browsebooks = () => {
   },[])
   
 
-  console.log(filteredBooks);
+  
   
   return (
     <div>
@@ -58,7 +58,7 @@ const Browsebooks = () => {
       )}
       {
         isSearching&& (
-          <h2>Search Results:</h2>
+          <h2 className='text-center text-blue-500 text-2xl font-bold'>Search Results :</h2>
         )
       }
       <BookList bookData={filteredBooks} />

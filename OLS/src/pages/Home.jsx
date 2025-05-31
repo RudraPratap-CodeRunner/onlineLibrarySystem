@@ -13,8 +13,6 @@ const Home = () => {
       <Welcome />
       <BookCategory />
       <PopularBooks />
-      
-
     </div>
   );
 };

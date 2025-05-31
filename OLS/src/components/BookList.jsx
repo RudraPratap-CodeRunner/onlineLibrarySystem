@@ -1,19 +1,16 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import Book from './Book'
+import React from 'react';
+import Book from './Book';
 
 const BookList = (props) => {
   return (
-    <div className='flex gap-6 flex-wrap justify-center items-center mt-4 bg-red-50'>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 bg-red-50 px-4">
       {
-        props.bookData.map(data=>(
-          
-            <Link to={`/bookdetails/${data.id}`} key={data.id}><Book key={data.id} bookDetails={data} /></Link>
-         
+        props.bookData.map(data => (
+          <Book key={data.id} bookDetails={data} />
         ))
       }
     </div>
-  )
-}
+  );
+};
 
-export default BookList
+export default BookList;
